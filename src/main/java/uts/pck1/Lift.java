@@ -5,5 +5,5 @@ public  class Lift{
 	/*deklarasikan atribut di sini*/
 	
 	/*deklarasikan semua method di sini*/
-}
+
 }
