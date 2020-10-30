@@ -1,6 +1,7 @@
 //TestLiftPenumpang.java
 package uts.pck1;
 
+import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNotSame;
@@ -59,6 +60,22 @@ public class TestLiftPenumpang {
 		Arguments.of(new LiftPenumpang("Panasonic",5,true,new Alarm("Alarm SafetyforAll", 3,false)),10,"\nAnda berada di lantai yang lebih rendah, silakan tekan tombol naik")
     );}
 	
+	@Test
+	public void testInheritance()
+	{ 
+		 rum = new LiftPenumpang();
+		 Lift bangn=new LiftPenumpang(rum);
+		 assertEquals(rum, bangn);
+	}
+	@Test
+	public void testGetSetMerk() {
+		Lift absCls = mock(
+		  Lift.class, 
+		  CALLS_REAL_METHODS);
+		absCls.setMerk("Hyundai");
+		  absCls.getMerk();
+	}
+		
 		
 	@Test
 	public void testKonstruktorI()

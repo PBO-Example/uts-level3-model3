@@ -1,8 +1,7 @@
 //LiftPenumpang.java
 package uts.pck1;
-public class LiftPenumpang{
+public class LiftPenumpang extends Lift{
 	//atribut
-	private String merk;
 	private int posisiLantai;
 	private boolean statusPintu;
 	private Alarm alarm;

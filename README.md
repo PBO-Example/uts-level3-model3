@@ -1,86 +1,33 @@
-# Selamat!!! Anda sekarang sudah di UTS Praktikum Level 2 dari 4 Level
+# Selamat!! Anda sekarang sudah di UTS Praktikum Level 3 dari 4 Level
 Baca instruksi yang diberikan dengan baik.
 
 
 ## Kelas Diagram
-![Image of UTS Level 2](http://api.puro.del.ac.id/v1/file/b8cc2b53b40cc2574b81341cef02a83c)
->Realisasikan kelas LiftPenumpang dan kelas Alarm yang ada pada kelas diagram di atas ke dalam bahasa pemrograman Java. Untuk masing-masing kelas lengkapi dengan konstruktor tanpa parameter, konstruktor dengan parameter, kopi konstruktor, serta setter dan getter. Gunakan template yang disediakan di 
-**src\main\java\uts**.
+![Image of UTS Level 3](http://api.puro.del.ac.id/v1/file/b8d9847ed24d7e2dd9117076e798cf5b)
+>Update program anda pada level 2 sehingga sesuai dengan  kelas diagram di atas. 
 
->**Anda boleh menggunakan (menyalin) kode program yang sudah anda hasilkan dari level 1**
+>**Perhatikan bahwa, pada level 3 ini, sejumlah atribut diangkat ke kelas Parent.**
 
->**Perhatikan bahwa, pada level 2 ini, tipe atribut alarm adalah Alarm.**
-
->**Untuk mendapatkan nilai sempurna pada level ini, konsentrasi menyesuaikan kode program kelas LiftPenumpang.java yang anda kerjakan pada level 1 sehingga semua konstruktor dan method dapat menerima atribut alarm yang bertipe Alarm (bukan String).**
-
->**Perhatikan bahwa keluaran method toString() dari kelas LiftPenumpang perlu diupdate. Silahkan cek gambar yang ada pada rubrik penilaian no. 7**
+>**Untuk mendapatkan nilai sempurna pada level ini, konsentrasi menyesuaikan kode program kelas LiftPenumpang.java yang anda kerjakan pada level 2 sehingga mempunyai relasi dengan kelas Lift seperti yang ditunjukkan pada kelas diagram di atas.**
 
 
 ## Rubrik Penilaian 
-1. **[Poin 10]** program dilengkapi dengan konstruktor tanpa parameter yang set data dengan nilai default sebagai berikut:
-merk lift Hyundai, lift berada di lantai 1, status pintu lift tertutup, dan alarm sedang dalam kondisi tidak aktif.
-	
-	> Perintah test: 
-	
-	
-		>gradle test --tests TestLiftPenumpang.testKonstruktorI
-
-2. **[Poin 15]** program dilengkapi dengan konstruktor dengan parameter 
-
-	
-	> Perintah test: 
-	
-	
-		>gradle test --tests TestLiftPenumpang.testKonstruktorII
-
-3. **[Poin 15]** program dilengkapi dengan kopi konstruktor
+1. **[Poin 50]** test realisasi relasi antara kelas LiftPenumpang dan Lift.
 	
 	
 	> Perintah test: 
 	
 	
-		> gradle test --tests TestLiftPenumpang.testKopiKonstruktor
+		>gradle test --tests TestLiftPenumpang.testInheritance
 
-4. **[Poin 15]** Program dilengkapi dengan sekumpulan setter dan getter	
-	
-	> Perintah test: 
-	
-	
-		> gradle test --tests TestLiftPenumpang.testSetter
-
-5. **[Poin 15]** Program dilengkapi dengan method liftNaik(). Method ini akan mengembalikan suatu pesan.
-> Misalnya data sebuah lift r kondisi di lantai 1 dan method liftNaik() dipanggil dengan r.liftNaik(10) maka pesan yang dihasilkan adalah: Lift naik 9 lantai, sekarang anda berada di lantai 10
-
-> Misalnya data sebuah lift r kondisi di lantai 2 dan method liftNaik() dipanggil dengan r.liftNaik(2) maka pesan yang dihasilkan adalah: Anda sudah berada di lantai 2
-
-> Misalnya data sebuah lift r kondisi di lantai 2 dan method liftNaik() dipanggil dengan r.liftNaik(1) maka pesan yang dihasilkan adalah: Anda berada di lantai yang lebih tinggi, silakan tekan tombol turun.
+2. **[Poin 50]** test realisasi method setMerk() dan getMerk() dari kelas Lift
 
 	
 	> Perintah test: 
 	
 	
-		> gradle test --tests TestLiftPenumpang.testLiftNaik
+		>gradle test --tests TestLiftPenumpang.testGetSetAlamat
 
-6. **[Poin 15]** Program dilengkapi dengan method liftTurun(). Method ini akan mengembalikan suatu pesan.
-> Misalnya data sebuah lift r kondisi di lantai 10 dan method liftTurun() dipanggil dengan r.liftTurun(8) maka pesan yang dihasilkan adalah: Lift turun 2 lantai, sekarang anda  berada di lantai 8
-
-> Misalnya data sebuah lift r kondisi di lantai 2 dan method liftTurun() dipanggil dengan r.liftTurun(2) maka pesan yang dihasilkan adalah: Anda sudah berada di lantai 2
-
-> Misalnya data sebuah lift r kondisi di lantai 12 dan method liftTurun() dipanggil dengan r.liftTurun(21) maka pesan yang dihasilkan adalah: Anda berada di lantai yang lebih rendah, silakan tekan tombol naik.
-
-	
-	> Perintah test: 
-	
-	
-		> gradle test --tests TestLiftPenumpang.testLiftTurun
-
-7. **[Poin 15]** program dilengkapi dengan method toString() yang akan menampilkan data di dalam objek Rumah. Perhatikan contoh keluaran yang diberikan.
-![Image of output of toString()](http://api.puro.del.ac.id/v1/file/8c9574b629ce4e7f5f72ad5a63efccbf)	
-	
-	> Perintah test: 
-	
-	
-		> gradle test --tests TestLiftPenumpang.testToString
 
 **Catatan Penting:**
 1. Anda hanya boleh mengubah kode program yang ada di src\main\java
