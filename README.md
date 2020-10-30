@@ -26,7 +26,7 @@ Baca instruksi yang diberikan dengan baik.
 	> Perintah test: 
 	
 	
-		>gradle test --tests TestLiftPenumpang.testGetSetAlamat
+		>gradle test --tests TestLiftPenumpang.testGetSetMerk
 
 
 **Catatan Penting:**
