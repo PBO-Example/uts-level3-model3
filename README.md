@@ -4,7 +4,7 @@ Baca instruksi yang diberikan dengan baik.
 
 ## Kelas Diagram
 ![Image of UTS Level 3](http://api.puro.del.ac.id/v1/file/b8d9847ed24d7e2dd9117076e798cf5b)
->Update program anda pada level 2 sehingga sesuai dengan  kelas diagram di atas. 
+>Silahkan menggunakan (menyalin) kode program yang sudah anda hasilkan dari level 2 dan modifikasi supaya sesuai dengan kebutuhan pada level 3 ini.
 
 >**Perhatikan bahwa, pada level 3 ini, sejumlah atribut diangkat ke kelas Parent.**
 
